@@ -1,100 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Prompt:wght@100&display=swap");
+
+.footer {
+  height: 20%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer button {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  border-width: 0;
+  border-radius: 3rem;
+  padding: 2rem 4rem;
+  margin-left: 0rem;
+}
+
 .home {
   margin: 0;
   padding: 0;
   height: 55rem;
   width: 100%;
   display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.header {
+  height: 15%;
+  width: 100%;
+  background-color: #d6d2c470;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
-  background-color: rgb(192, 241, 225);
+  flex-direction: row;
+  position: absolute;
+  margin: 0;
+  overflow-y: hidden;
+  padding-left: 3rem;
+}
+
+.imageSection {
+  display: block;
+  width: 30%;
+  height: 60%;
+  background-color: #000000;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: absolute;
+  margin-left: 70%;
+  margin-top: 10%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-.image-section {
+.logo {
+  height: 200%;
+  width: 10%;
+}
+
+.textBox {
   height: 50%;
-  width: 40%;
-  z-index: 2;
-  margin-top: 2rem;
-}
-
-img {
-  height: 100%;
-  width: 45%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  transform: rotate(20deg);
-}
-
-.getStartedButton {
-  padding: 1.5rem 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3rem;
-  margin-top: 5rem;
-  background-color: #f03;
-  /* background-color: #202731; */
-  color: #fff;
-  border-width: 0;
-  z-index: 2;
-}
-
-.getStartedButton:active {
-  background-color: #fff;
-}
-
-.navBar {
-  height: 7%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-right: 10rem;
-  padding-bottom: 1rem;
-}
-
-.navBar button {
-  height: 30%;
-  background-color: transparent;
-  border-color: transparent;
-  margin: 0 10px;
-  font-weight: 300;
-}
-
-.homeHeader {
-  height: 10%;
   width: 70%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
-.homeHeader span {
+.textBox p {
   color: #000;
-  font-size: 3rem;
-  /* font-weight: 250; */
+  font-family: "Birthstone Bounce", sans-serif;
+  font-size: 7rem;
 }
 
-.curve {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+.textSection {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  height: 50%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 13%;
+  margin-right: auto;
+  margin-left: 10rem;
 }
 
-.curve::before {
-  position: absolute;
-  width: 35%;
-  height: 70%;
-  border-radius: 50% 50%;
-  background-color: #fff;
-  content: "";
-  transform: translate(90%, 30%);
-  z-index: -1;
+.wineImage {
+  height: 55%;
+  width: 75%;
+  display: block;
+  margin: 25% auto;
 }

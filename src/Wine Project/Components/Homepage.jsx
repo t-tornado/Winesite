@@ -1,21 +1,15 @@
 import React from "react";
 import "../Styles/homepage.css";
-import wine from "../assets/wineBottle.png";
-import GetStartedButton from "./GetStartedButton";
-import { Navbar } from "./navBar";
+import Navbar from "./navbar";
+import TextSide from "./textSide";
+import ImageSide from "./imagesSide";
 
 const Homepage = () => {
   return (
     <div className="home">
       <Navbar />
-      <div className="homeHeader">
-        <span>Know your wine and wineries</span>
-      </div>
-      <div className="curve"></div>
-      <div className="image-section">
-        <img src={wine} alt="Wine"></img>
-      </div>
-      <GetStartedButton />
+      <TextSide />
+      <ImageSide />
     </div>
   );
 };
