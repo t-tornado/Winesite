@@ -1,0 +1,100 @@
+.home {
+  margin: 0;
+  padding: 0;
+  height: 55rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(192, 241, 225);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.image-section {
+  height: 50%;
+  width: 40%;
+  z-index: 2;
+  margin-top: 2rem;
+}
+
+img {
+  height: 100%;
+  width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(20deg);
+}
+
+.getStartedButton {
+  padding: 1.5rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  margin-top: 5rem;
+  background-color: #f03;
+  /* background-color: #202731; */
+  color: #fff;
+  border-width: 0;
+  z-index: 2;
+}
+
+.getStartedButton:active {
+  background-color: #fff;
+}
+
+.navBar {
+  height: 7%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 10rem;
+  padding-bottom: 1rem;
+}
+
+.navBar button {
+  height: 30%;
+  background-color: transparent;
+  border-color: transparent;
+  margin: 0 10px;
+  font-weight: 300;
+}
+
+.homeHeader {
+  height: 10%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.homeHeader span {
+  color: #000;
+  font-size: 3rem;
+  /* font-weight: 250; */
+}
+
+.curve {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.curve::before {
+  position: absolute;
+  width: 35%;
+  height: 70%;
+  border-radius: 50% 50%;
+  background-color: #fff;
+  content: "";
+  transform: translate(90%, 30%);
+  z-index: -1;
+}
