@@ -1,6 +1,5 @@
 import React from "react";
 import "../Styles/homepage.css";
-import logo from "../assets/logo.jpeg";
 
 const TextSide = () => {
   return (
